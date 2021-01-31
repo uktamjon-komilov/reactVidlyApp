@@ -6,6 +6,7 @@ class TableBody extends Component {
     if (column.content) return column.content(item);
     else return _.get(item, column.path);
   };
+
   render() {
     const { data, columns } = this.props;
     return (
